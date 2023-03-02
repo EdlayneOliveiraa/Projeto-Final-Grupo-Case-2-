@@ -29,7 +29,27 @@ npm install react-router-bootstrap
 npm install
 npm run dev
 ```
+⇨ VISÃO GERAL:
+<img>![Visao geral](https://user-images.githubusercontent.com/114404910/222430864-22cbb1cb-0ef7-452a-ab1d-ddaf9aea5bba.png)</img>
 
-⇨ LISTA PREENCHIDA:
+⇨ BANNER:
+<img>![Home-Banner](https://user-images.githubusercontent.com/114404910/222431202-c576b2ac-dc42-4521-a231-09aa10b6e0ae.png)</img>
 
-<img>![list atividades](https://user-images.githubusercontent.com/114404910/222421940-8046fc3b-d7d0-46bc-aa71-76f90b039c5c.png)</img>
+⇨ TEMA 1:
+<img>![foto1](https://user-images.githubusercontent.com/114404910/222431621-89354f2c-5451-4785-b160-ddc1f8d08d2b.png)</img>
+
+⇨ TEMA 2:
+<img>![foto2](https://user-images.githubusercontent.com/114404910/222431575-302914c5-c40a-4517-b415-03e9c0ded456.png)</img>
+
+⇨ TEMA 3:
+<img>![foto3](https://user-images.githubusercontent.com/114404910/222431547-5a2047c1-51cf-4aba-8fdd-08ee42cf15f3.png)</img>
+
+⇨ TEMA 4:
+<img>![foto4](https://user-images.githubusercontent.com/114404910/222431514-016174f4-a882-4e27-b0c9-f77de1720099.png)</img>
+
+⇨ TEMA 5:
+<img>![foto5](https://user-images.githubusercontent.com/114404910/222431442-ce212ba6-47f4-47ae-a571-dc4525cf5ed9.png)</img>
+
+
+⇨ NOSSA EQUIPE:
+<img>![Equipe](https://user-images.githubusercontent.com/114404910/222432264-ed779e05-f97b-4dc6-ad77-a6786895f077.png)</img>
