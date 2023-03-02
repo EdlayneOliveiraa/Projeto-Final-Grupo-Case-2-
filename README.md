@@ -5,7 +5,7 @@ O grupo deve decidir qual será o MVP utilizado nessa fase, o site precisa ter -
 página inicial, sobre (com conteúdo editável), funcionalidades (com conteúdo
 cadastrável e editável) e uma tela de contato. O conteúdo das páginas sobre e
 funcionalidades deve ser consultado de uma API, para realizar a edição e
-cadastro serão criadas rotas /admin
+cadastro serão criadas rotas/admin
 Hora de colocar tudo que discutimos sobre metodologias ágeis em prática!
 
 ### 1. Instalar as dependências
