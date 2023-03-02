@@ -24,4 +24,4 @@ npm run dev
 
 ⇨ LISTA PREENCHIDA:
 
-<img>![lista preenchida](https://user-images.githubusercontent.com/114404910/221890413-df666916-4586-4a5f-88ad-c0363b54e077.png)</img>
+<img>![list atividades](https://user-images.githubusercontent.com/114404910/222421940-8046fc3b-d7d0-46bc-aa71-76f90b039c5c.png)</img>
