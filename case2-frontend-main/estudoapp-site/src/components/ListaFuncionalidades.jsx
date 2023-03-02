@@ -13,6 +13,7 @@ function ItemFuncionalidade(item) {
                     <Card.Text>
                         {item.description}
                     </Card.Text>
+                    <img src={`${item.url}`} alt={item.url} width={350} />
                 </Card.Body>
             </Card>
         </Col>

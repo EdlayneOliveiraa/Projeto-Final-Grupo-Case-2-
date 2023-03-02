@@ -7,5 +7,6 @@ export default class Product extends ApplicationModel {
         Product.associar('id', 'ID')
         Product.associar('title', 'TITLE')
         Product.associar('description', 'DESCRIPTION')
+        Product.associar('url', 'URL' )
     }
 }

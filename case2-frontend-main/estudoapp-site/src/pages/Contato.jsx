@@ -10,29 +10,33 @@ function Contato() {
     }
 
     return (
-        <Container className='conteudo-margin'>
-            <h1>Contato</h1>
-            <p>Entre em contato conosco</p>
+        <Container className='contatO'>
+            <div className='formulario'>
+                <div className='text-contato'>
+                    <h1 id='text-contato'>Contato</h1>
+                    <p>Entre em contato conosco</p>
+                </div>
+                
 
-            <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="Nome">
-                    <Form.Label>Nome</Form.Label>
-                    <Form.Control type="text" placeholder="Digite seu nome completo" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="Email">
-                    <Form.Label>E-mail</Form.Label>
-                    <Form.Control type="email" placeholder="Digite seu e-mail" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="Mensagem">
-                    <Form.Label>Mensagem</Form.Label>
-                    <Form.Control as="textarea" rows={3} />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Enviar contato
-                </Button>
-            </Form>
-
-            <Depoimentos />
+                <Form className='' onSubmit={handleSubmit}>
+                    <Form.Group className="mb-3" controlId="Nome">
+                        <Form.Label>Nome</Form.Label>
+                        <Form.Control type="text" placeholder="Digite seu nome completo" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="Email">
+                        <Form.Label>E-mail</Form.Label>
+                        <Form.Control type="email" placeholder="Digite seu e-mail" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="Mensagem">
+                        <Form.Label>Mensagem</Form.Label>
+                        <Form.Control className='textArea' as="textarea" rows={3} />
+                    </Form.Group>
+                    <Button className='btn-form' variant="primary" type="submit">
+                        Enviar contato
+                    </Button>
+                </Form>
+            </div>
+            <Depoimentos/>
         </Container>
     );
 }

@@ -1,12 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap%27');
+
 .conteudo-margin {
     margin-top: 55px;
 }
 
 .active.nav-link {
-    color: #ffd000 !important;
-    border-bottom: 1px solid #ffd000 !important;
+    color: #008b8b !important;
+    border-bottom: 1px solid #008b8b !important; 
 }
 
 .nav-link{
+    font-family: 'Tilt Warp', cursive;
     border-bottom: 1px solid transparent;
 }
+/*==============Barra de Navegação==============*/
+
+body{
+    background-image: url('/img/Background.png');
+    
+}
+
+
+.ttest{
+    background-color: #191919;
+    color: white;
+}
+
+.espaco{
+    margin-left: 30px;
+    font-size: larger !important;
+}
+
+.espacoO{
+    margin-left: 50rem;
+    font-size: larger !important;
+}
+.me-auto{
+    font-size: x-large;
+}
+/*==============Body Home==============*/
+
+
+@keyframes vaivai {
+    0% {
+      transform: translateX(500px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  };
+  
+.cavalinho{
+    margin-top: 150px;
+}
+
+.fotinha{
+    border-radius: 50%;
+    margin-top: 140px;
+    margin-left: 7px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.textA{
+    font-family: 'Tilt Warp', cursive;
+    margin-left: 75px;
+    margin-right: 30px;
+    color: white;
+    animation: vaivai 1s;
+}
+.conteudo-margin{
+    color: white;
+    margin: 125px;
+}
+
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+
+.mt-3{
+    color: white;
+}
+.card-text{
+    color: black;
+}
+strong{
+    color: black;
+}
+.forte{
+    color: white
+}
+.btn:hover{
+    background-color: #9400d3c3 !important;
+    border-color: #9400d3d3 !important;
+    color: white !important;
+}
+.btn {
+    background-color: #9400d3 !important;
+    border-color: #9400d3 !important;
+    color: white !important;
+}
+
+tr td{
+    color: white !important;
+}
+th{
+    color: white;
+}
+
+/*===========Formulário=============*/
+.formulario {
+    color: white;
+    border: solid 3px white;
+    margin-top: 115px;
+    padding: 15px;
+    border-radius: 2%;
+}
+.textArea {
+    resize: none;
+}
+
+.contatO {
+    width: 700px !important;
+}
+
+.text-contato {
+    text-align: center;
+}
+
+#text-contato {
+    font-family: 'Tilt Warp', cursive;
+}
+/*========Sobre nós==========*/
+.text_img{
+    display: flex;
+}
+.sobre-text{
+    padding-left: 50px;
+}
+
+.fraco{
+    color: white;
+}
+.equipeP{
+    padding-top: 50px;
+    display: flex;
+}
+.equipeF{
+    padding-left: 50px;
+}
+
+/*==========Funcionalidades=======*/
+
+
+/*===========TORNOZA=======*/
+
+/*.cabecaoPai{
+    /*flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}*/
+
+.cabecao{
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+
+}
+
+.caneE{
+    margin-right: 85px;
+}
+.cane{
+    align-items: center;
+    margin-left: 30px;
+}
+.torn{
+    align-items: center;
+    margin-left: 30px;
+}
+.tornoza{
+    
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.canela{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+/*===========RODAPÉ========*/
+
+
+footer{
+    color: white;
+    border-top-color: #008b8b !important;
+}
+
+
+
+

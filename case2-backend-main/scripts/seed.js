@@ -1,5 +1,6 @@
-import { hashSync } from "bcrypt"
 
+
+import { hashSync } from "bcrypt"
 import Page from "../src/DAO/Page.js"
 import Product from "../src/DAO/Product.js"
 import User from "../src/DAO/User.js"
@@ -17,10 +18,11 @@ const seed = async () => {
     const pages = [page]
 
     const products = []
-    for (let i=1; i<=10; i++) {
+    for (let i=1; i<=5; i++) {
         const prod = new Product()
         prod.title = `Produto ${i}`
         prod.description = `Descrição do produto ${i}`
+        prod.url = `./img/foto${i}.png`
         products.push(prod)
     }
 

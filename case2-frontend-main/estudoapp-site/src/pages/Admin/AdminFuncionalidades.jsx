@@ -3,6 +3,7 @@ import {useEffect, useState} from 'react'
 import CmsApi from '../../api/CmsApi'
 import Funcionalidades from './../Funcionalidades';
 
+
 function AdminFuncionalidades() {
     const [funcionalidades, setFuncionalidades] = useState([])
 
@@ -21,8 +22,9 @@ function AdminFuncionalidades() {
         const form = event.currentTarget
         const title = form.title.value
         const description = form.description.value
+        const url = form.url.value
 
-        const response = await CmsApi().postFuncionalidade({title, description})
+        const response = await CmsApi().postFuncionalidade({title, description, url})
         if(!response.ok) {
             alert('Erro ao cadastrar funcionalidade')
             return
@@ -67,16 +69,27 @@ function AdminFuncionalidades() {
         inputDescricao.value = colunaDescricao.innerText
         colunaDescricao.innerText = ''
         colunaDescricao.appendChild(inputDescricao)
+        //Cria um input para url
+        const colunaUrll = linha.children[3]
+        const inputUrll = document.createElement('input')
+        inputUrll.type = 'text'
+        inputUrll.value = colunaUrll.innerText
+        colunaUrll.innerText = ''
+        colunaUrll.appendChild(inputUrll)
     }
 
+    
     async function salvarEdicao(botao, id) {
         const linha = botao.parentNode.parentNode
         const colunaTitulo = linha.children[1]
         const inputTitulo = colunaTitulo.children[0]
         const colunaDescricao = linha.children[2]
         const inputDescricao = colunaDescricao.children[0]
+        const colunaUrll = linha.children[3]
+        const inputUrll = colunaUrll.children[0]
+        
 
-        const response = await CmsApi().patchFuncionalidade({id: id, title: inputTitulo.value, description: inputDescricao.value})
+        const response = await CmsApi().patchFuncionalidade({id: id, title: inputTitulo.value, description: inputDescricao.value, url: inputUrll.value})
         if(!response.ok) {
             alert('Erro ao editar funcionalidade')
             return
@@ -85,6 +98,7 @@ function AdminFuncionalidades() {
         
         colunaTitulo.innerText = inputTitulo.value
         colunaDescricao.innerText = inputDescricao.value
+        colunaUrll.innerText = inputUrll.value
 
         botao.innerText = 'Editar'
         botao.classList.remove('btn-success')
@@ -105,6 +119,10 @@ function AdminFuncionalidades() {
                 <Form.Group className="mb-3" controlId="description">
                     <Form.Label>Descrição</Form.Label>
                     <Form.Control type="text" placeholder="Digite a descrição" />
+                </Form.Group>
+                <Form.Group className="mb-3" controlId="url">
+                    <Form.Label>Icone</Form.Label>
+                    <Form.Control type="text" placeholder="Digite a URL" />
                 </Form.Group>
                 <Button variant="primary" type="submit">
                     Cadastrar
