@@ -17,6 +17,7 @@ npm run migrate
 npm run seed
 npm start
 
+
 Front:
 cd estudoapp-site
 npm install react-bootstrap bootstrap
